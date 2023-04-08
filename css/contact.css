@@ -1,0 +1,197 @@
+
+/*=================
+	Contact Header
+ ==================*/
+ .contact-header{
+ 	  background-image: url("../images/titlebar-bg.jpg");
+ }
+ .contact-col{
+ 	  padding: 50px 15px;
+ }
+ .contact-col:nth-child(2){
+    padding: 50px 30px;
+ }
+ .contact-col h5{
+ 	  color: #259c17;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 2px 0px;
+  }
+ .contact-col h2{
+ 	  margin-top:0px;
+ }
+ main .contact-form input,
+ main .contact-form .chosen-container,
+ main .contact-form textarea{
+ 	  font-family: inherit;
+    border-radius: 0;
+    vertical-align: middle;
+    width: 100%;
+    color: #242424;
+    padding: 9px 20px;
+    margin:10px 0px;
+    font-weight: 400;
+    background-color: #fff;
+    text-transform: inherit;
+    border: 1px solid rgba(119,119,119,.2);
+    font-size: 14px;
+    outline: none;
+    line-height: inherit;
+ }
+ main .contact-form .chosen-container{
+    font-family: inherit;
+    border-radius: 0;
+    vertical-align: middle;
+    width: 100% !important;
+    color: #242424;
+    padding:0px;
+    margin:10px 0px;
+    font-weight: 400;
+    background-color: #fff;
+    text-transform: inherit;
+    border: 1px solid rgba(119,119,119,.2);
+    font-size: 14px;
+    outline: none;
+    line-height: inherit;
+ }
+ main .contact-form .chosen-drop{
+    width:100% !important;
+    background-color: #fff;
+    position: absolute !important;
+    left:0 !important;
+ }.chosen-container-active .chosen-single{
+    border:1px solid #257c17 !important;
+    box-shadow: none !important;
+ }
+ main .contact-form textarea{
+ 	  min-height: 120px;
+ }
+  main .contact-form input:focus,
+  main .contact-form textarea:focus{
+    border:1px solid #259c17;
+  }
+  main .contact-form button{
+  	font-family : inherit;
+    border-radius: 0;
+    vertical-align: middle;
+    width: 100%;
+    color: #fff;
+    padding: 9px 15px;
+    margin:10px 0px;
+    font-weight: 400;
+    background-color: #259c17;
+    text-transform: inherit;
+    border: 1px solid rgba(119,119,119,.2);
+    font-size: 14px;
+    outline: none;
+    line-height: inherit;
+    cursor: pointer;
+  }
+  main .contact-form button:hover{
+  	background-color: #1d2435;
+  }
+  main .contact-form input{
+    position: relative;
+  }
+   main .contact-form .icon-resp{
+    position: absolute;
+    top:20px;
+    right:20px;
+    display: none;
+  }
+  .contact-form .icon-resp .fa-times{
+    color:red;
+  }
+  .contact-form .icon-resp .fa-check{
+    color:green;
+  }
+  .contact-form .error{
+    color:red;
+    padding-left:2px;
+    display: none;
+  }
+  .contact-form .success{
+    color:green;
+    padding-left:2px;
+    display: none;
+  }
+
+  .contact-strip{
+    background-image: url("../images/green-parallax.png");
+    padding: 30px 0px;
+    color:#fff;
+  }
+  .contact-strip .strip-icon i{
+    font-size: 70px;
+  }
+  .strip-detail h5{
+    margin:4px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .strip-detail h3{
+    margin: 5px 0px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  .contact-strip a.button{
+    margin-top:30px;
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+    color: #257c17;
+    font-family: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    float: right;
+  }
+  .contact-strip a.button:hover{
+    background: #202839;
+    color:#fff;
+  }
+  main .contact-col .contact-item{
+  	display: flex;
+  	align-items: center;
+  	margin:30px 0px;
+  }
+  main .contact-col .contact-icon{
+	 background: #259c17;
+	 padding: 22px;
+  }
+  main .contact-item:hover .contact-icon{
+   background: #1d2435;
+  }
+  main .contact-col .contact-icon i{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	font-size: 30px;
+  	color:#fff;
+  }
+  main .contact-col .contact-detail h3{
+  	margin-top:0px;
+    margin-bottom: 5px;
+    font-size:16px;
+  }
+   main .contact-col .contact-detail p{
+   	margin: 2px 5px;
+  }
+
+  .map-container{
+    margin-top:0px;
+    padding: 0px;
+  }
+
+  .map-container .contact-map{
+    height:450px;
+  }
+  .contact-map iframe{
+    width: 100%;
+    height: 100%;
+  }

@@ -1,0 +1,76 @@
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+ 
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/GIF "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive on
+    
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType javascript/file "access plus 1 year"
+
+
+
+    # Embedded OpenType (EOT)
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 year"
+    ExpiresByType font/eot                              "access plus 1 year"
+
+    # OpenType
+    ExpiresByType font/opentype                         "access plus 1 year"
+
+    # TrueType
+    ExpiresByType application/x-font-ttf                "access plus 1 year"
+
+    # Web Open Font Format (WOFF) 1.0
+    ExpiresByType application/font-woff                 "access plus 1 year"
+    ExpiresByType application/x-font-woff               "access plus 1 year"
+    ExpiresByType fonts/woff                             "access plus 1 year"
+
+    # Web Open Font Format (WOFF) 2.0
+    ExpiresByType application/font-woff2                 "access plus 1 year"
+    ExpiresByType fonts/fontawesome-webfont.woff2        "access plus 1 year"
+    ExpiresByType fonts/fontawesome-webfont.woff2?v4.7.0 "access plus 1 year"
+    ExpiresByType text/x-cross-domain-policy             "access plus 1 week"
+    ExpiresByType fonts/woff                             "access plus 1 year"
+    ExpiresByType fonts/iconfont.ttf                     "access plus 1 year"
+    ExpiresByType application/x-font-woff                "access plus 1 year"
+   </IfModule>
+   <IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 year"
+ </IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^www.apjea.unifyp.com [NC]
+    RewriteRule ^(.*)$ http://apjea.unifyp.com/$1 [L,R=301]
+    RewriteBase /
+
+
+    RewriteCond %{HTTP_HOST} ^192.185.17.108
+    RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule (.*) http://apjea.unifyp.com/$1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule ^(.*)$ index.php/$1 [L]
+
+    </IfModule>
+    php_flag display_startup_errors on
+    php_flag display_errors on
+    FileETag MTime Size

@@ -1,0 +1,332 @@
+.blood-header{
+	background: linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.1) ), url('../images/blood-header.jpg');
+    background-position: 100% top;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    overflow: hidden;
+    min-height:100vh;
+    margin-top: -45px;
+}
+.blood-item{
+	background: rgba(255,255,255,0.93);
+	padding: 30px 20px 50px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-top:20vh;
+    z-index: 1;
+    text-align: center;
+}
+.blood-item:before,
+.blood-item:after{
+	content: "";
+    width: 130px;
+    height: 130px;
+    background: 0 0;
+    border: 5px solid #1ea30e;
+    position: absolute;
+    z-index:-1;
+}
+.blood-item:before{
+	bottom: 0;
+    left: 0;
+    border-top: 0;
+    border-right: 0;
+}
+.blood-item:after{
+	top: 0;
+    right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.blood-item h2{
+	letter-spacing: .03em;
+    position: relative;
+    overflow: hidden;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    margin: 24px 0 0;
+    color: #1a1a1a;
+    text-transform: uppercase;
+}
+.blood-item h3{
+	color: #257c17;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 16px 0 0;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+}
+
+.blood-item button.btn-donate{
+	border: none;
+	outline: none;
+    padding: 20px 45px;
+    background: #257c17;
+    color: #fff;
+    font-size: inherit;
+    margin-top: 15px;
+    cursor:pointer;
+}
+.blood-item button.btn-donate:hover{
+	background: #242c42;
+}
+
+/*====================
+	Header Bottom
+ =====================*/
+.header-bottom{
+	background:#edf0f2 !important;
+	padding: 15px 0px;
+}
+.header-bottom h3{
+	margin-top:5px;
+	margin-bottom: 5px;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    color:#1a1a1a;
+    font-weight: 600;
+}
+.header-bottom button{
+	border: none;
+	outline: none;
+    padding: 20px 45px;
+    background: #257c17;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    margin-top: 15px;
+    cursor:pointer;
+}
+.header-bottom p{
+	margin:2px 0px;
+	color:#777;
+}
+
+.main-head{
+	margin-top:30px;
+	margin-bottom: 20px;
+}
+.main-head h2{
+	position: relative;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    color: #444;
+    margin: 0;
+}
+.main-head p{
+	margin:0px 0px;
+}
+.main-head span.separator{
+	display: block;
+	text-align: center;
+}
+span.separator img{
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/*============================
+	Process Section
+  ============================*/
+  .donation-process{
+  	padding: 60px 0px;
+  }
+.process-column{
+    margin:20px 0px;
+    text-align: left;
+    position: relative;
+    padding: 0;
+    background: #f8f9fa;
+}
+.process-column .process-image{
+	position: relative;
+}
+.process-column .process-image img{
+	vertical-align: middle;
+}
+.process-column span.no{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 30px;
+    background:#257c17cc;
+    display: block;
+    width: 55px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.process-column .process-text{
+	padding:15px 20px;
+}
+.process-column .process-text h3{
+	font-size:24px;
+    letter-spacing: .01em;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    color:#257c17;
+    margin: 0;
+}
+
+
+/*======================
+  	Form Section
+  ======================*/
+  .form-upper{
+  	margin-top:30px;
+  	padding: 15px 20px;
+    color: #fff;
+    font-size: 20px;
+    background: #257c17;
+  }
+  .form-upper h3{
+  	margin:0;
+  	text-align: center;
+  }
+  .form-outer{
+  	background: #eaedf1;
+    position: relative;
+    padding-bottom:0px 20px 24px;
+  }
+  .form-outer .row{
+  	margin:0;
+  	padding:30px 20px 60px;
+  }
+  .form-outer form input,
+  .form-outer form textarea,
+  .form-outer form select{
+  	width:100%;
+  	outline: none;
+  	border:none;
+  	padding:14px 10px;
+  	margin-bottom:15px;
+  }
+
+  .form-outer form textarea{
+  	min-height: 120px;
+  }
+  .form-outer button.btn-appoint{
+  	width:300px;
+  	padding: 20px 10px;
+    background: #257c17;
+    box-shadow: 0px 0px 5px #242c42;
+    color: #fff;
+    cursor: pointer;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .form-outer button.btn-appoint:hover{
+  	background: #242c42;
+  }
+
+
+
+  /*========================
+  		Donation Quotes
+  	========================*/
+  	.donate-quotes{
+  		background: url("../images/blood-qt.jpg") no-repeat center;
+  		padding:100px 10px;
+  	}
+  	.quotes-carousel{
+  		background: #fff;
+  		padding: 30px 20px;
+  	}
+  	.quote-column p{
+  		color:#242c42;
+  		position: relative;
+  		padding-left:40px;
+  		font-size: 20px;
+  	}
+  	.quote-column p:before{
+  		position: absolute;
+	    content: "\f10d";
+	    font-family: "FontAwesome";
+	    left: 4px;
+	    top: 0;
+	    color: #257c17;
+	    font-size: 30px;
+  	}
+  	.quote-column .quote-bottom{
+  		text-align: center;
+  	}
+  	.quote-column .quote-bottom h3{
+  		font-size: 24px;
+  		text-transform: uppercase;
+  		color:#257c17;
+  		margin: 2px 0px;
+  	}
+  	.quote-bottom h3 span{
+  		position: relative;
+  	}
+  	.quote-bottom h3 span:before{
+  		position: absolute;
+	    content: "";
+	    top: 14px;
+	    left: -35px;
+	    width: 30px;
+	    height: 2px;
+	    background: #777;
+  	}
+  	.quote-bottom h3 span:after{
+  		position: absolute;
+	    content: "";
+	    top: 14px;
+	    right: -35px;
+	    width: 30px;
+	    height: 2px;
+	    background: #777;
+  	}
+  	.quote-bottom h5{
+  		color: #777;
+	    font-weight: 600;
+	    font-size: 16px;
+	    margin: 5px 0px;
+  	}
+
+  	.quotes-carousel .owl-dots{
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      margin-top:10px;
+   }
+
+   .quotes-carousel .owl-dots .owl-dot{
+      display: inline-block;
+      width: 13px;
+      height: 9px;
+      box-shadow: none;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+      background-color: #c9cacf;
+      border:1px solid #ccc;
+      line-height: 0;
+      margin:3px 2px;
+      padding: 0;
+   }
+
+   .quotes-carousel .owl-dots .owl-dot.active{
+      display: inline-block;
+      width: 25px;
+      height: 9px;
+      background-color:#259c17;
+    }
