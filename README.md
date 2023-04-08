@@ -9,7 +9,7 @@ License: Digital Applications
 * Clone this repository.
 * Install xampp as files used .php extension which need server to run.
 * cd apjea
-* open http://localhost/
+* open http://localhost/apjea
 
 Happy Coding !! 
 Please follow me for more details.
